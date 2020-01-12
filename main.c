@@ -51,27 +51,6 @@ int main() {
         }
     }
     
-    /* testing if values & operators are stacked successfully
-     int i, m;
-     for (i = 0; i < valstack[i] != '\0'; i++) {
-     printf("valstack[%d] is %f\n", i, valstack[i]);
-     }
-     for (m = 0; i < opstack[m] != '\0'; m++) {
-     printf("opstack[%d] is %c\n", m, opstack[m]);
-     }
-     */
-    
-    /* testing if searchp1 functions correctly
-     printf("position of first * is... [%d]\n", searchp1(opstack));
-     */
-    
-    /* testing if opstack was altered
-     int n;
-     for (n = 0; i < opstack[n] != '\0'; n++) {
-     printf("opstack[%d] is %c\n", n, opstack[n]);
-     }
-     */
-    
     int p;
     while((p = searchp1(opstack)) != -1) {
         multi(p, valstack);
